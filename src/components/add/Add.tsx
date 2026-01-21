@@ -1,8 +1,7 @@
-
 import { GridColDef } from "@mui/x-data-grid";
 import "./add.scss";
-// import { useMutation, useQueryClient } from "@tanstack/react-query";
 
+// import { useMutation, useQueryClient } from "@tanstack/react-query";
 type Props = {
   slug: string;
   columns: GridColDef[];
@@ -10,7 +9,6 @@ type Props = {
 };
 
 const Add = (props: Props) => {
-
   // TEST THE API
 
   // const queryClient = useQueryClient();
@@ -45,12 +43,12 @@ const Add = (props: Props) => {
 
     //add new item
     // mutation.mutate();
-    props.setOpen(false)
+    props.setOpen(false);
   };
   return (
     <div className="add">
       <div className="modal">
-        <span className="close" onClick={() => props.setOpen(false)}>
+        <span className="close " onClick={() => props.setOpen(false)}>
           X
         </span>
         <h1>Add new {props.slug}</h1>
